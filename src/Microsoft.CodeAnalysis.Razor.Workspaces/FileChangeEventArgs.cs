@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Microsoft.VisualStudio.Editor.Razor
+namespace Microsoft.CodeAnalysis.Razor
 {
     internal sealed class FileChangeEventArgs : EventArgs
     {

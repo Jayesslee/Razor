@@ -3,9 +3,9 @@
 
 using Microsoft.CodeAnalysis.Host;
 
-namespace Microsoft.VisualStudio.Editor.Razor
+namespace Microsoft.CodeAnalysis.Razor
 {
-    internal abstract class FileChangeTrackerFactory : ILanguageService
+    internal abstract class FileChangeTrackerFactory : IWorkspaceService
     {
         public abstract FileChangeTracker Create(string filePath);
     }

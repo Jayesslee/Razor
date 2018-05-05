@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.Shell.Interop;
 
 namespace Microsoft.VisualStudio.LanguageServices.Razor
 {
-    internal class DefaultFileChangeTracker : FileChangeTracker, IVsFileChangeEvents
+    internal class VisualStudioFileChangeTracker : FileChangeTracker, IVsFileChangeEvents
     {
         private const uint FileChangeFlags = (uint)(_VSFILECHANGEFLAGS.VSFILECHG_Time | _VSFILECHANGEFLAGS.VSFILECHG_Size | _VSFILECHANGEFLAGS.VSFILECHG_Del | _VSFILECHANGEFLAGS.VSFILECHG_Add);
 
@@ -21,7 +21,7 @@ namespace Microsoft.VisualStudio.LanguageServices.Razor
 
         public override event EventHandler<FileChangeEventArgs> Changed;
 
-        public DefaultFileChangeTracker(
+        public VisualStudioFileChangeTracker(
             string filePath,
             ForegroundDispatcher foregroundDispatcher,
             ErrorReporter errorReporter,
