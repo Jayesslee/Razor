@@ -230,7 +230,7 @@
     -->
     <PackageReference Include="Microsoft.VisualStudio.ComponentModelHost" Version="15.0.26606" />
     <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="15.0.26606" />
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="15.1.192" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="15.7.109" />
   </ItemGroup>
   <ItemDefinitionGroup>
     <SuppressFromVsix>
